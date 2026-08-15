@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0d1b2a" />
+    <title>Pagol Ar jogot</title>
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+      <div class="security-lock" id="securityLock" aria-live="polite">
+        <div class="lock-card">
+            <div class="lock-badge"><i class="fa-solid fa-shield-halved"></i></div>
+            <h1>Pabna Jaoar Doroja</h1>
+            <p>Jne na rag korbn kina</p>
+
+            <form id="lockForm" novalidate>
+                <div class="mb-3">
+                    <label for="userId">Apnr Faviorite Maam Ar Name Likhun</label>
+                    <input type="text" id="userId" name="userId" placeholder="Nam to suna he hoga" autocomplete="off" />
+                </div>
+
+                <div class="mb-3">
+                    <label for="password">Tar Course Code Likhun</label>
+                    <input type="password" id="password" name="password" placeholder="Kece Ho" autocomplete="off" />
+                </div>
+
+                <button type="submit" class="unlock-btn"><i class="fa-solid fa-lock-open"></i> Khul Ja Seem Seem</button>
+                <div id="authMessage" class="auth-message" aria-live="assertive"></div>
+            </form>
+        </div>
+    </div>
+
+    <div class="site-shell" id="siteShell">
+        <nav class="navbar navbar-expand-lg sticky-top custom-navbar">
+            <div class="container-fluid container-lg">
+                <a class="navbar-brand brand-wrap" href="#home" aria-label="স্মৃতির অ্যালবাম">
+                    <span class="brand-icon"><i class="fa-solid fa-heart"></i></span>
+                    <span class="brand-text">Pagol Ar Album</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                        <li class="nav-item"><a class="nav-link active" href="#home">Bari</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gallery">IPHONE USER PICTURE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#videos">Video</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#messages">Bolod</a></li>
+                        <li class="nav-item ms-lg-2">
+                            <button id="logoutBtn" class="logout-btn" type="button">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                BER HOYE JA
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container-fluid container-lg py-4 py-md-5" id="home">
+            <section class="hero-banner mb-4">
+    <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+            <span class="eyebrow">Manush er jokhon kono kaj thake na... 😌</span>
+
+            <h1>Tokhon e amn ajaira kaj kore website banay! 😂</h1>
+
+            <p>
+                Manush er jokhon porashuna, kaj-kormo kichui thake na,
+                tokhon mathay emn emn idea ase... ar amar mathay ashlo
+                tumare nia ekta website banai! 🙂😂
+                <br><br>
+                Ki dorkar chilo? Kono dorkar chilo na.
+                Banailam keno? Jani na.
+                Koto khon lagse? Oitao jigaiyo na. 😑
+                <br><br>
+                Ja hok, eto kichu banaiya jokhon felsei,
+                akhn tumar kaj hoilo ghura-ghuri kore shob dekha,
+                vul-vranti paile chupchap thaka ar bhalo lagle
+                beshi beshi compliment deya. 😌
+                <br><br>
+                Ar ha, website to banaiya dilam...
+                akhn tumar hater kacci kobe khaowaiba? 👀😂
+            </p>
+
+            <div class="d-flex flex-wrap gap-3 mt-4">
+                <a href="#gallery" class="primary-btn">
+                    <i class="fa-solid fa-camera-retro"></i>
+                    Amader kachakachi gula dekho
+                </a>
+                <a href="#messages" class="secondary-btn">
+                    <i class="fa-solid fa-note-sticky"></i>
+                    Kicu kotha ache
+                </a>
+            </div>
+        </div>
+
+        <div class="col-lg-5">
+            <div class="hero-visual">
+                <div class="visual-frame">
+                    <i class="fa-solid fa-gift"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+            <section class="row g-4 mb-4" id="gallery"> 
+    <div class="col-md-6 col-xl-3"> 
+        <article class="memory-card"> 
+            <div class="icon-box pink"><i class="fa-solid fa-face-smile"></i></div> 
+            <h3>Hasi, Masti & Paglamo 😂</h3> 
+            <p>
+                Kotha kom, hasi beshi—ar majhe majhe emn emn kotha
+                jeta shune mone hoy, “Ei meyeta eto kotha koi theke ane!” 😑😂
+            </p> 
+        </article> 
+    </div> 
+ 
+    <div class="col-md-6 col-xl-3"> 
+        <article class="memory-card"> 
+            <div class="icon-box blue"><i class="fa-solid fa-cloud-sun-rain"></i></div> 
+            <h3>Brishti, Cha & Adda ☕🌧️</h3> 
+            <p>
+                Brishti poruk ar na poruk, golpo kintu cholbei.
+                Thoda chai, thoda gossip, ar majhe majhe ekdom faltu
+                kotha niye serious discussion. 😌😂
+            </p> 
+        </article> 
+    </div> 
+ 
+    <div class="col-md-6 col-xl-3"> 
+        <article class="memory-card"> 
+            <div class="icon-box purple"><i class="fa-solid fa-moon"></i></div> 
+            <h3>Rater Random Kotha 🌙</h3> 
+            <p>
+                “Bas ekto kotha bolbo” diye shuru hoye kokhon je
+                onekkhon chole jay, tar kono hisab nai. 😑
+                <br>
+                <i>Raat boro nahi, hamari baatein badi hain. 😂</i>
+            </p> 
+        </article> 
+    </div> 
+ 
+    <div class="col-md-6 col-xl-3"> 
+        <article class="memory-card"> 
+            <div class="icon-box green"><i class="fa-solid fa-star"></i></div> 
+            <h3>Ei Je Amader Scene 🤝</h3> 
+            <p>
+                Na pura serious, na pura normal—ekta alada hi combination.
+                Ektu dustami, ektu jhamela, abar kichukhon por
+                “ki koro?” diye abar shuru. 😂
+                <br>
+                <i>Bas, aise hi rehna... boring hoiyo na! 😌</i>
+            </p> 
+        </article> 
+    </div> 
+</section>
+
+            <section class="story-panel mb-4" id="messages"> 
+    <div class="row g-4 align-items-stretch"> 
+        <div class="col-lg-7"> 
+            <div class="story-box"> 
+                <span class="section-tag">Amar Note 😌</span> 
+                <h3>Ekta Chotto Chithi... Na Na, Chithi na, Kicu Kotha 😂</h3> 
+                <p> 
+                    Shuno Madam, eto kichu niye website banaiya felse jokhon,
+                    tokhon ekta note na dile abar pura project e komti theke jay. 😑😂
+                    Shuru te vabchilam kichu kotha hoibo, tarpor jar jar kaj.
+                    Kintu dekha gelo kotha barte barte kothay jaiya pouchailam,
+                    oita amar nijer-o jana nai. 🙂
+                </p> 
+                <p> 
+                    Majhe majhe tumar sathe eto soitani korchi je,
+                    onno kew hoile hoyto ekta mair diya dito. 😂
+                    Abr kokhono tumi emn emn kotha bolo je
+                    chup kore thaka chara kono upay thake na. 😑
+                    <br><br>
+                    Hindi te bolle—
+                    <b>“Hum dono ka scene hi alag hai... kabhi hasi, kabhi pyaar se jhamela,
+                    phir thodi der baad sab normal.”</b> 😂
+                </p>
+                <p>
+                    Ar ekta kotha mone rakhba—
+                    <b>“Zyada hawa mein mat uriyo, website banaiya disi bole VIP hoye jao nai.”</b> 😌😂
+                    Website dekha sesh kore ekta bhalo review diba,
+                    ar ha... website banaiya dilam,
+                    ekhon tumar hater kacci kobe khaowaiba sheita bolo. 👀
+                </p>
+            </div>
+        </div> 
+ 
+        <div class="col-lg-5"> 
+            <div class="quote-box"> 
+                <i class="fa-solid fa-quote-left"></i> 
+                <p> 
+                    “Kuch log life mein bina plan ke aa jate hain,
+                    phir dheere dheere unke saath itni saari faltu kahani ban jati hai
+                    je, ekdin dekha jay—oi kahinigulai shobcheye beshi mone thake. 😌🤍”
+                </p> 
+            </div> 
+        </div> 
+    </div> 
+</section>
+
+            <section class="gallery-section" id="gallery"> 
+    <div class="section-heading text-center mb-4"> 
+        <span class="section-tag">Joto Kando, Shob Ekhane 😌📸</span> 
+        <h2>Tumar kichu random, sundor ar cute memory 😂</h2> 
+        <p>
+            Kichu chobi just chobi na—kono ta hasi'r,
+            abar kono ta dekhe mone hoy, “তোমার হাসিটা যেন কোনোদিন হারিয়ে না যায়,
+কারণ তোমার হাসিতে অজান্তেই কারও মন ভালো হয়ে যায়। 😊🤍!” 😑😂
+            <br>
+            Shob miliye, joto ja pari tar kichu sample ekhane rakha holo. 🤍
+        </p> 
+    </div> 
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 gallery-grid" id="galleryGrid"></div> 
+</section>
+
+            <section class="video-section" id="videos">
+                <div class="section-heading text-center mb-4">
+                    <span class="section-tag">ভিডিও কর্নার</span>
+                    <h2>স্মরণীয় ভিডিও কর্নার</h2>
+                    <p>কিছু মুহূর্তের অশ্রু-হাসি ও স্মৃতি এখন ভিডিওর ভেতরও বেঁচে আছে।</p>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 video-grid">
+                    <div class="col">
+                        <article class="video-card">
+                            <div class="video-wrapper">
+                                <video controls preload="metadata" playsinline muted>
+                                    <source src="videos/Facebook_1786542138978.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+                            <div class="video-body">
+                                <h3>হাসির ভেতরটা কিছুটা আলাদা</h3>
+                                <p>এক মুহূর্তের হাসি, আর সেথায় জেগে থাকা বন্ধুত্বের কাঁধ।</p>
+                                <button class="like-btn" type="button" data-count="128">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <span>১২৮</span>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col">
+                        <article class="video-card">
+                            <div class="video-wrapper">
+                                <video controls preload="metadata" playsinline muted>
+                                    <source src="videos/Facebook_1786542151298.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+                            <div class="video-body">
+                                <h3>শান্তির ছোট্ট স্নিগ্ধ মুহূর্ত</h3>
+                                <p>কথার ভেতর, নীরবতার ভেতর, সুন্দর এক বন্ধুত্ব বাঁচিয়ে থাকে।</p>
+                                <button class="like-btn" type="button" data-count="94">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <span>৯৪</span>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col">
+                        <article class="video-card">
+                            <div class="video-wrapper">
+                                <video controls preload="metadata" playsinline muted>
+                                    <source src="videos/Facebook_1786542170700.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+                            <div class="video-body">
+                                <h3>ভালোবাসার সুরে ভরা দিন</h3>
+                                <p>একসাথে হাঁটতে হাঁটতে ফোটে ওঠে ঘুরে ফিরে আসা স্মৃতিগুলো।</p>
+                                <button class="like-btn" type="button" data-count="141">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <span>১৪১</span>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            
+
+            <section class="wish-section" id="messages">  
+    <div class="section-heading text-center mb-4">  
+        <span class="section-tag">Kicu Kotha Baki Ache 🤭</span>  
+        <h2>Mon Chai Ja Bolar, Bole Dao 😂</h2>  
+        <p>
+            Eto kichu banaisi, akhn tumar pala. 😌
+            Bhalo hoise, naki amar matha pura noshto hoiya gese—
+            shotti kotha WhatsApp e pathaiya dio. 😂
+            <br>
+            Chaile proshongsha korte paro, chaile gali-o dite paro...
+            ami shob shojjo korbo. 😑😂
+        </p>  
+    </div>  
+  
+    <div class="row justify-content-center g-4">  
+        <div class="col-lg-6">  
+            <form class="wish-form" id="wishForm">  
+                <div class="mb-3">  
+                    <label for="visitorName">Naam ta bolo 👀</label>  
+                    <input
+                        type="text"
+                        id="visitorName"
+                        name="visitorName"
+                        placeholder="Ki naam diye dakbo tomare? 😌"
+                    />  
+                </div>  
+  
+                <div class="mb-3">  
+                    <label for="visitorMessage">Ebar ja bolar bolo 😂</label>  
+                    <textarea
+                        id="visitorMessage"
+                        name="visitorMessage"
+                        rows="5"
+                        placeholder="Bhalo hoise? Faltu hoise? Gali diba? Shob khule bolo... 😑😂"
+                    ></textarea>  
+                </div>  
+  
+                <button type="submit" class="submit-btn">  
+                    <i class="fa-solid fa-paper-plane"></i>  
+                    WhatsApp e Pathao 🤭
+                </button>  
+            </form>  
+        </div>  
+  
+        <div class="col-lg-6">  
+            <div class="wish-feed" id="wishFeed" aria-live="polite"></div>  
+        </div>  
+    </div>  
+</section>
+
+            <section class="gallery-strip">
+                <div class="row g-3 text-center">
+                    <div class="col-6 col-md-3">
+                        <div class="mini-card">
+                            <i class="fa-solid fa-image"></i>
+                            <span>Sobi</span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="mini-card">
+                            <i class="fa-solid fa-video"></i>
+                            <span>Mental</span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="mini-card">
+                            <i class="fa-solid fa-music"></i>
+                            <span>Paglami</span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="mini-card">
+                            <i class="fa-solid fa-heart-circle-check"></i>
+                            <span>Vondami</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container-fluid container-lg">
+                <div class="row align-items-center gy-3 text-center text-md-start">
+                    <div class="col-md-6">
+                        <p>Vlo Hoye Jao <span>❤️</span></p>
+                    </div>
+
+                    <div class="col-md-6 text-md-end">
+                        <div class="social-links">
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#" aria-label="Mail"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <span>© ২০২৬ Brilliant Der Sobi</span>
+                    <span>Designed By Eptyr Hental Mealth Friend</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="modal fade gallery-lightbox" id="galleryLightbox" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content gallery-modal-content">
+                <button type="button" class="lightbox-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <div class="lightbox-body">
+                    <button type="button" class="lightbox-nav prev" id="prevImageBtn" aria-label="Previous image">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+
+                    <img id="lightboxImage" src="" alt="" />
+
+                    <button type="button" class="lightbox-nav next" id="nextImageBtn" aria-label="Next image">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <div class="lightbox-caption" id="lightboxCaption"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PICTURE</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="security-lock" id="securityLock" aria-live="polite">
+        <div class="lock-card">
+            <div class="lock-badge"><i class="fa-solid fa-shield-halved"></i></div>
+            <h1>Pabna Jaoar Doroja</h1>
+            <p>Jne na rag korbn kina</p>
+
+            <form id="lockForm" novalidate>
+                <div class="mb-3">
+                    <label for="userId">Apnr Faviorite Maam Ar Name Likhun</label>
+                    <input type="text" id="userId" name="userId" placeholder="আপনার আইডি লিখুন" autocomplete="off" />
+                </div>
+
+                <div class="mb-3">
+                    <label for="password">Tar Course Code Likhun</label>
+                    <input type="password" id="password" name="password" placeholder="আপনার পাসওয়ার্ড লিখুন" autocomplete="off" />
+                </div>
+
+                <button type="submit" class="unlock-btn"><i class="fa-solid fa-lock-open"></i> আনলক করুন</button>
+                <div id="authMessage" class="auth-message" aria-live="assertive"></div>
+            </form>
+        </div>
+    </div>
+
+    <div class="site-shell" id="siteShell">
+        <header class="topbar">
+            <div class="container-fluid container-lg">
+                <div class="d-flex justify-content-between align-items-center py-3">
+                    <div class="brand-wrap">
+                        <span class="brand-icon"><i class="fa-solid fa-heart"></i></span>
+                        <span class="brand-text">PICTURE</span>
+                    </div>
+                    <button id="logoutBtn" class="logout-btn" type="button"><i class="fa-solid fa-right-from-bracket"></i> লগআউট</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="container-fluid container-lg py-5">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="memory-card h-100">
+                        <div class="icon-box pink"><i class="fa-solid fa-image"></i></div>
+                        <h3>1</h3>
+                        <p>Cute But Pagol</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="memory-card h-100">
+                        <div class="icon-box blue"><i class="fa-solid fa-camera"></i></div>
+                        <h3>2</h3>
+                        <p>কথার ভেতর, হাসির ভেতর, এবং অপেক্ষার ভেতর ভরপুর স্মৃতি।</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="memory-card h-100">
+                        <div class="icon-box purple"><i class="fa-solid fa-star"></i></div>
+                        <h3>3</h3>
+                        <p>প্রতিটি মুহূর্তই একেকটা ছোট্ট গল্পের মতো মূল্যবান।</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
